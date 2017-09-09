@@ -1,0 +1,57 @@
+<div class="headerInfo clearix">
+    <div class="headerInfo-left">
+        <span class="headerInfo-highlight">
+            {% if siteLocale.headerinfo_calltext.root %}
+            {{ siteLocale.headerinfo_calltext.original }}
+            {% else %}
+            *t2*Call us on
+            {% endif %}
+            :</span>
+        {% if siteLocale.headerinfo_phone.root %}
+        {{ siteLocale.headerinfo_phone.original }}
+        {% else %}
+        *t2*Phone number
+        {% endif %}
+        <i class="material-icons md-18" data-toggle="tooltip" data-html="true" data-placement="right" title="
+            {% if siteLocale.headerinfo_tooltiptext_1.root %}
+            {{ siteLocale.headerinfo_tooltiptext_1.original }}
+            {% else %}
+            *t2*Tooltip text 1
+            {% endif %}
+         <br>
+            {% if siteLocale.headerinfo_tooltiptext_2.root %}
+            {{ siteLocale.headerinfo_tooltiptext_2.original }}
+            {% else %}
+            *t2*Tooltip text 1
+            {% endif %}
+         ">info_outline</i>
+    </div>
+    <div class="headerInfo-right">
+        <span class="headerInfo-highlight">
+            {% if siteLocale.headerinfo_righttext_1.root %}
+            {{ siteLocale.headerinfo_righttext_1.original }}
+            {% else %}
+            *t2*Right text 1
+            {% endif %}
+        </span>
+        {% if siteLocale.headerinfo_righttext_2.root %}
+        {{ siteLocale.headerinfo_righttext_2.original }}
+        {% else %}
+        *t2*Right text 2
+        {% endif %}
+    </div>
+    <div class="headerInfo-center">
+        <span class="headerInfo-highlight">
+            {% if siteLocale.headerinfo_centertext_1.root %}
+            {{ siteLocale.headerinfo_centertext_1.original }}
+            {% else %}
+            *t2*Center text 1
+            {% endif %}
+        </span>
+        {% if siteLocale.headerinfo_centertext_2.root %}
+        {{ siteLocale.headerinfo_centertext_2.original }}
+        {% else %}
+        *t2*Center text 2
+        {% endif %}
+    </div>
+</div>

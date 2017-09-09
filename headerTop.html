@@ -1,0 +1,61 @@
+<div class="header-top">
+
+	<div class="row head-row-1">
+        <div id="site-menu">
+
+            <a class="site-menu-toggle-trigger visible-xs visible-sm" href="javascript:;" onclick="$('#site-menu-content').fadeToggle();">
+                <i class=" glyphicon glyphicon-align-justify"></i> 
+            </a>
+
+            <a href="/">
+                <img src="/assets/images/festlane_logo_white.png" class="site-logo">
+            </a>
+
+
+            {% if localeCode == 'en'%}
+            <a href="/pages/atol" class="site-logo-2">
+                <img src="/assets/images/svg/atol_logo_white_number.svg">
+                <span class="logo-text">
+                    <b>
+                    {% if siteLocale.security_logo_text_1.root %}
+                    {{ siteLocale.security_logo_text_1.original }}
+                    {% else %}
+                    *t2*Center text 1
+                    {% endif %}
+                    </b>
+                    {% if siteLocale.security_logo_text_2.root %}
+                    {{ siteLocale.security_logo_text_2.original }}
+                    {% else %}
+                    *t2*Center text 2
+                    {% endif %}
+                </span>
+            </a>
+            {% endif %}
+
+            {% if localeCode == 'nl'%}
+            <a href="/pages/sgr" class="site-logo-2">
+                <img src="/assets/images/sgr-logo-white.png">
+                <span class="logo-text">
+                    <b>
+                    {% if siteLocale.security_logo_text_1.root %}
+                    {{ siteLocale.security_logo_text_1.original }}
+                    {% else %}
+                    *t2*Center text 1
+                    {% endif %}
+                    </b>
+                    {% if siteLocale.security_logo_text_2.root %}
+                    {{ siteLocale.security_logo_text_2.original }}
+                    {% else %}
+                    *t2*Center text 2
+                    {% endif %}
+                </span>
+            </a>
+            {% endif %}
+
+            <div id="site-menu-content">
+                {% include "frontend/headerLinks.html" %}
+            </div>
+        </div>
+    </div>
+
+</div>
